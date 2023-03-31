@@ -33,6 +33,13 @@ int main()
     // BASIC SYNTAX__________________________________________________________________________________
     int i=10;
     int &j=i; // syntax for creating reference variable
+    
+   /*
+     int &j;
+     j=i;
+
+     This will throw the error saying declaration of reference variable requires an initializer.
+    */ 
 
     cout<<"i="<<i<<"\t++i="<<++i<<endl;
     cout<<"j="<<j<<"\t++j="<<++j<<endl;
