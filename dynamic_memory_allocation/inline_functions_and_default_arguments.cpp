@@ -29,20 +29,20 @@ int sum(int a, int b, int c=0, int d=0)
 
 int main()
 {
+    // INLINE FUNCTION CALLS
     int a,b,c;
-
     cin>>a>>b;
 
     c=find_max(a,b);
     cout<<"Max. of "<<a<<" and "<<b<<" is "<<c<<endl;
 
     int x,y,z;
-
     cin>>x>>y;
 
     z=find_max(x,y);
     cout<<"Max. of "<<x<<" and "<<y<<" is "<<z<<endl;
-
+ 
+    // CALLING FUNCTION WITH DEFAULT ARGUMENTS
     cout<<sum(1,2,3,4)<<endl;
     cout<<sum(1,2,3)<<endl;
     cout<<sum(1,2)<<endl;
