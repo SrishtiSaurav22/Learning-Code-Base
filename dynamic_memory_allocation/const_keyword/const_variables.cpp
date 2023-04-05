@@ -6,7 +6,7 @@ int main()
 {
     // NON-CONST VARIABLES
     int i=20;
-    int &j=i;
+    int &j=i; // reference variable
 
     ++i;
     ++j;
@@ -46,3 +46,13 @@ int main()
     cout<<endl;
     return 0;
 }
+
+/*
+DOUBT: Is the memory location that a constant variable points to, made immutable or is the path to that location immutable? This is in reference to c++.
+
+In C++, a constant variable is a variable whose value cannot be changed once it has been initialized. The memory location that a constant variable points to is not made immutable by the compiler. However, the path to that location is immutable in the sense that the constant variable cannot be used to modify the value at that location.
+
+In other words, the constant variable itself is read-only and cannot be used to modify the value it points to. The memory location itself may still be writable, but any attempts to modify it through the constant variable will result in a compilation error.
+
+It's worth noting that in C++, the const keyword can be used in different contexts, such as for defining constant pointers, references, or member functions. In each case, the behavior of the constant variable may differ slightly, but the basic idea is the same: the variable is read-only, but the memory location it points to may still be writable.
+*/
